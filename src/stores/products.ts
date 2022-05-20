@@ -2,27 +2,27 @@ import { defineStore } from 'pinia'
 
 // import { useFirebase } from '@/use/useFirebase'
 
-import type { Category } from '@/types/categories'
+import type { Product } from '@/types/products'
 
 // const api = useFirebase()
 
 import api from '@/api/api.json'
 
-type State = { list: Category[] }
+type State = { list: Product[] }
 
-export const useCategoriesStore = defineStore({
-  id: 'categories',
+export const useProductsStore = defineStore({
+  id: 'products',
 
   state: (): State => ({
-    list: [...api.categories]
+    list: [...api.products]
     // isLoading: false
   }),
 
   getters: {
-    getCategoryById:
+    getProductById:
       (state) =>
-      (id: string): Category =>
-        state.list.find((category) => category.id === id)!
+      (id: string): Product =>
+        state.list.find((product) => product.id === id)!
   }
 
   // actions: {

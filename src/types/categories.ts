@@ -1,4 +1,10 @@
-export type Category = { name: string; image: string }
-export type CategoryList = {
-  [key: string]: Category
+export type Category = {
+  id: string
+  name: string
+  image: string
+}
+
+export enum BaseUrl {
+  Dev = '/dev',
+  Prod = '/prod'
 }

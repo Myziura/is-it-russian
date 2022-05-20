@@ -1,0 +1,37 @@
+{
+  "categories": [
+    {
+      "id": "it",
+      "name": "it",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/it.jpeg?alt=media&token=b58041e8-d82d-4ded-8c3f-5a2c2081ef6f"
+    },
+    {
+      "id": "food",
+      "name": "food",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food.jpeg?alt=media&token=3d4e8bbd-de32-43f5-a52e-92866e223b53"
+    }
+  ],
+  "products": [
+    {
+      "id": "it-kaspersky",
+      "categoryId": "it",
+      "name": "it-kaspersky",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/it-kaspersky.jpeg?alt=media&token=f8d44028-5c49-4a1d-bc6d-c51bbbaacfea",
+      "text": "Offieces: USA, Germany, Turkey \n Products: Homespaces, Farmspaces and more"
+    },
+    {
+      "id": "it-headhunter",
+      "categoryId": "it",
+      "name": "it-headhunter",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/it-headhunter.png?alt=media&token=c7eb5988-9443-4d1f-a8fb-6e3ef20e31f8",
+      "text": "2"
+    },
+    {
+      "id": "food-baltika",
+      "categoryId": "food",
+      "name": "food-baltika",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food-baltika.webp?alt=media&token=473c7ef4-5a08-4a56-9cae-1717505e53ee",
+      "text": "3"
+    }
+  ]
+}
