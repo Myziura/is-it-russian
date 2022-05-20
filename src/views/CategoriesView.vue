@@ -1,8 +1,6 @@
 <template>
   <div class="container px-4 h-full mx-auto flex flex-col">
-    <span>
-      Ці компанії мають російських власників та фінансують її воєнну машину.
-    </span>
+    <span>{{ $t('subtitle') }}</span>
     <CategoriesList class="mt-4 sm:mt-8" :categories="categories.list" />
   </div>
 </template>
