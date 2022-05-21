@@ -9,6 +9,16 @@
       "id": "food",
       "name": "food",
       "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food.jpeg?alt=media&token=3d4e8bbd-de32-43f5-a52e-92866e223b53"
+    },
+    {
+      "id": "mobile-games",
+      "name": "Мобільні ігри",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food.jpeg?alt=media&token=3d4e8bbd-de32-43f5-a52e-92866e223b53"
+    },
+    {
+      "id": "games",
+      "name": "Ігри",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food.jpeg?alt=media&token=3d4e8bbd-de32-43f5-a52e-92866e223b53"
     }
   ],
   "products": [
@@ -17,7 +27,7 @@
       "categoryId": "it",
       "name": "it-kaspersky",
       "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/it-kaspersky.jpeg?alt=media&token=f8d44028-5c49-4a1d-bc6d-c51bbbaacfea",
-      "text": "Offieces: USA, Germany, Turkey \n Products: Homespaces, Farmspaces and more"
+      "text": "1"
     },
     {
       "id": "it-headhunter",
@@ -32,6 +42,62 @@
       "name": "food-baltika",
       "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food-baltika.webp?alt=media&token=473c7ef4-5a08-4a56-9cae-1717505e53ee",
       "text": "3"
+    },
+    {
+      "id": "mobile-games-homescapes",
+      "categoryId": "mobile-games",
+      "name": "Homescapes",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food-baltika.webp?alt=media&token=473c7ef4-5a08-4a56-9cae-1717505e53ee",
+      "text": "Студія: Playrix \nПлатформа: IOS, Android \nЗавантажень: 1 000 000 + \n"
+    },
+    {
+      "id": "mobile-games-gardenscapes",
+      "categoryId": "mobile-games",
+      "name": "Gardenscapes",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food-baltika.webp?alt=media&token=473c7ef4-5a08-4a56-9cae-1717505e53ee",
+      "text": "Студія: Playrix \nПлатформа: IOS, Android \nЗавантажень: 1 000 000 + \n"
+    },
+    {
+      "id": "mobile-games-township",
+      "categoryId": "mobile-games",
+      "name": "Township",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food-baltika.webp?alt=media&token=473c7ef4-5a08-4a56-9cae-1717505e53ee",
+      "text": "Студія: Playrix \nПлатформа: IOS, Android \nЗавантажень: 1 000 000 + \n"
+    },
+    {
+      "id": "mobile-games-stellar-age",
+      "categoryId": "mobile-games",
+      "name": "Stellar Age: MMO Strategy",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food-baltika.webp?alt=media&token=473c7ef4-5a08-4a56-9cae-1717505e53ee",
+      "text": "Студія: CrazyPanda \nПлатформа: IOS, Android \nЗавантажень: 1 000 000 + \n"
+    },
+    {
+      "id": "mobile-games-zombie-shop",
+      "categoryId": "mobile-games",
+      "name": "Zombie Shop",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food-baltika.webp?alt=media&token=473c7ef4-5a08-4a56-9cae-1717505e53ee",
+      "text": "Студія: CrazyPanda \nПлатформа: IOS, Android \nЗавантажень: 500 000 + \n"
+    },
+    {
+      "id": "games-war-thunder",
+      "categoryId": "games",
+      "name": "War Thunder",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food-baltika.webp?alt=media&token=473c7ef4-5a08-4a56-9cae-1717505e53ee",
+      "text": "Студія: Gaijin Entertainment \nПлатформа: PC \nЗавантажень: 1 000 000 + \n"
+    },
+    {
+      "id": "games-crossout",
+      "categoryId": "games",
+      "name": "CrossOut",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food-baltika.webp?alt=media&token=473c7ef4-5a08-4a56-9cae-1717505e53ee",
+      "text": "Студія: Gaijin Entertainment \nПлатформа: PC \nЗавантажень: 1 000 000 + \n"
+    },
+    {
+      "id": "games-enlisted",
+      "categoryId": "games",
+      "name": "Enlisted",
+      "image": "https://firebasestorage.googleapis.com/v0/b/is-it-russian.appspot.com/o/food-baltika.webp?alt=media&token=473c7ef4-5a08-4a56-9cae-1717505e53ee",
+      "text": "Студія: Gaijin Entertainment \nПлатформа: PC \nЗавантажень: 1 000 000 + \n"
     }
   ]
 }
