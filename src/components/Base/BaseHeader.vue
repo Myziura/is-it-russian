@@ -1,30 +1,24 @@
 <template>
-  <div class="container mx-auto px-4 flex items-center justify-between">
-    <div class="flex text-3xl tracking-wide">
-      <router-link to="/" class="hover:underline">
+  <div class="container mx-auto px-4 flex items-start justify-between">
+    <div class="flex flex-col text-3xl tracking-wide sm:flex-row">
+      <router-link to="/" class="hover:underline leading-8">
         <h1>is it <span class="text-red-500">russian?</span></h1>
       </router-link>
 
-      <div v-if="category">
-        <span class="mx-4">></span>
+      <div class="flex flex-col sm:flex-row leading-8">
+        <div v-if="isProductsListPage && category">
+          <span class="mr-4 sm:m-0 sm:mx-4">></span>
+          <span>{{ category.name }}</span>
+        </div>
 
-        <router-link
-          v-if="product"
-          :to="{ name: 'products', params: { categoryId: category.id } }"
-          class="hover:underline"
-        >
-          {{ category.name }}
-        </router-link>
-        <span v-else>{{ category.name }}</span>
-      </div>
-
-      <div v-if="product">
-        <span class="mx-4">></span>
-        <span>{{ product.name }}</span>
+        <div v-if="isProductItemPage && product">
+          <span class="mr-4 sm:m-0 sm:mx-4">></span>
+          <span>{{ product.name }}</span>
+        </div>
       </div>
     </div>
 
-    <select v-model="$i18n.locale">
+    <select class="h-8" v-model="$i18n.locale">
       <option
         v-for="locale in $i18n.availableLocales"
         :key="`locale-${locale}`"
@@ -52,9 +46,20 @@ const products = useProductsStore()
 let category = ref<Category | null>(null)
 let product = ref<Product | null>(null)
 
+enum Pages {
+  ProductsList = 'products',
+  ProductItem = 'product'
+}
+
+let isProductsListPage = ref<boolean>(false)
+let isProductItemPage = ref<boolean>(false)
+
 watch(
   () => route.name,
   () => {
+    isProductsListPage.value = route.name === Pages.ProductsList
+    isProductItemPage.value = route.name === Pages.ProductItem
+
     const categoryId = route.params.categoryId as string
     const productId = route.params.productId as string
 

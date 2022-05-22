@@ -1,7 +1,7 @@
 <template>
-  <div class="flex">
+  <div class="flex flex-col sm:flex-row">
     <img
-      class="h-44 w-44 mr-8 object-cover"
+      class="h-44 w-44 mx-auto mb-8 object-cover sm:m-0 sm:mr-8"
       :src="props.product.image"
       :alt="props.product.name"
     />
