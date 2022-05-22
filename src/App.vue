@@ -1,20 +1,21 @@
 <template>
   <div class="h-full w-full py-8 flex flex-col sm:py-16">
-    <BaseHeader class="mb-4 sm:mb-8" />
-    <router-view />
+    <BasePigModal v-if="geo.isCountryRussia" />
 
-    <div class="fixed inset-0 h-full w-full">
-      <iframe
-        class="h-full w-full"
-        src="https://www.youtube.com/embed/ZY4OxlbbPlw?controls=0&autoplay=1"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      />
-    </div>
+    <template v-else>
+      <BaseHeader class="mb-4 sm:mb-8" />
+      <router-view />
+    </template>
   </div>
 </template>
+
 <script setup lang="ts">
+import { ref } from 'vue'
 import BaseHeader from '@/components/Base/BaseHeader.vue'
+import BasePigModal from '@/components/Base/BasePigModal.vue'
+
+import { useGeoStore } from '@/stores/geo'
+
+const geo = useGeoStore()
+geo.fetch()
 </script>
