@@ -6,6 +6,9 @@ import type { Geo } from '@/types/geo'
 
 const api = useApi()
 
+enum Country {
+  Russia = 'RU'
+}
 type State = Geo
 
 export const useGeoStore = defineStore({
@@ -16,7 +19,7 @@ export const useGeoStore = defineStore({
   }),
 
   getters: {
-    isCountryRussia: (state) => state.country === 'Russia'
+    isCountryRussia: (state) => state.country === Country.Russia
   },
 
   actions: {
