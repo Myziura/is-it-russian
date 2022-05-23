@@ -3,7 +3,10 @@
     class="container mx-auto px-4 flex items-start justify-between font-semibold"
   >
     <div class="flex flex-col text-3xl tracking-wide sm:flex-row">
-      <router-link to="/" class="hover:underline leading-8">
+      <router-link
+        to="/"
+        class="hover:underline leading-8 decoration-2 underline-offset-4"
+      >
         <h1>is it <span class="text-red-500">russian?</span></h1>
       </router-link>
 

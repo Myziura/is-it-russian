@@ -6,7 +6,7 @@
     format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: 'Montserrat';
@@ -14,7 +14,7 @@
     format('truetype');
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @tailwind base;
