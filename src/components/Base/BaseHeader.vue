@@ -1,5 +1,7 @@
 <template>
-  <div class="container mx-auto px-4 flex items-start justify-between">
+  <div
+    class="container mx-auto px-4 flex items-start justify-between font-semibold"
+  >
     <div class="flex flex-col text-3xl tracking-wide sm:flex-row">
       <router-link to="/" class="hover:underline leading-8">
         <h1>is it <span class="text-red-500">russian?</span></h1>
@@ -18,7 +20,7 @@
       </div>
     </div>
 
-    <select class="h-8" v-model="$i18n.locale">
+    <select class="h-8 font-semibold" v-model="$i18n.locale">
       <option
         v-for="locale in $i18n.availableLocales"
         :key="`locale-${locale}`"

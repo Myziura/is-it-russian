@@ -6,9 +6,9 @@
     }"
   >
     <div
-      class="absolute inset-0 h-full w-full flex items-center justify-center text-center bg-red-400 bg-opacity-50 hover:bg-opacity-90"
+      class="absolute inset-0 h-full w-full p-2 flex items-center justify-center text-center bg-red-400 bg-opacity-50 hover:bg-opacity-90"
     >
-      <span class="text-xl text-white">{{ props.name }}</span>
+      <span class="text-2xl text-white font-semibold">{{ props.name }}</span>
     </div>
   </li>
 </template>

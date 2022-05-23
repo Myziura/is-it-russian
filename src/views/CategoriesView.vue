@@ -1,6 +1,6 @@
 <template>
   <div class="container px-4 h-full mx-auto flex flex-col">
-    <span>{{ $t('subtitle') }}</span>
+    <span class="font-semibold">{{ $t('subtitle') }}</span>
     <CategoriesList class="mt-4 sm:mt-8" :categories="categories.list" />
   </div>
 </template>
