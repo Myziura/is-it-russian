@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { Product } from '@/types/products'
+import type { Product } from '@/types/products'
 
 const props = defineProps<{
   product: Product

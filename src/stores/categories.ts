@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia'
-
 // import { useFirebase } from '@/use/useFirebase'
 
 import type { Category } from '@/types/categories'

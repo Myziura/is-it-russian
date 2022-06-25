@@ -10,7 +10,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
 import BaseHeader from '@/components/Base/BaseHeader.vue'
 import BasePigModal from '@/components/Base/BasePigModal.vue'
 

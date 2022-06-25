@@ -9,7 +9,10 @@ const api = useApi()
 enum Country {
   Russia = 'RU'
 }
+
 type State = Geo
+
+// const a = 123
 
 export const useGeoStore = defineStore({
   id: 'geo',

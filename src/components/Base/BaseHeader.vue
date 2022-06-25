@@ -25,7 +25,7 @@
 
     <select class="h-8 font-semibold" v-model="$i18n.locale">
       <option
-        v-for="locale in $i18n.availableLocales"
+        v-for="locale of $i18n.availableLocales"
         :key="`locale-${locale}`"
         :value="locale"
       >
@@ -44,17 +44,26 @@ import type { Product } from '@/types/products'
 import { useCategoriesStore } from '@/stores/categories'
 import { useProductsStore } from '@/stores/products'
 
+enum Pages {
+  ProductsList = 'products',
+  ProductItem = 'product'
+}
+
+// type Type = {}
+// interface Hello {}
+// class Class {}
+// new Class()
+// const a = new Date()
+// const b = JSON.stringify({})
+// const c = Math.max()
+// const d = 123
+
 const route = useRoute()
 const categories = useCategoriesStore()
 const products = useProductsStore()
 
 let category = ref<Category | null>(null)
 let product = ref<Product | null>(null)
-
-enum Pages {
-  ProductsList = 'products',
-  ProductItem = 'product'
-}
 
 let isProductsListPage = ref<boolean>(false)
 let isProductItemPage = ref<boolean>(false)
