@@ -4,6 +4,7 @@
     "paths": {
       "@/*": ["./*"]
     },
+    "typeRoots": ["./types"],
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",

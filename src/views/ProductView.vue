@@ -5,23 +5,18 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
 import ProductItem from '@/components/Products/ProductsItem.vue'
-
-import type { Product } from '@/types/products'
-
 import { useProductsStore } from '@/stores/products'
 
 const route = useRoute()
 const products = useProductsStore()
 
-let product = ref<Product | undefined>()
+const productId = computed(() => route.params.productId as string)
 
-const productId = route.params.productId as string
-
-if (productId) {
-  product.value = products.getProductById(productId)
-}
+const product = computed(() =>
+  productId ? products.getProductById(productId.value) : null
+)
 </script>

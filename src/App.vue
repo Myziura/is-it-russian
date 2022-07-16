@@ -3,7 +3,7 @@
     <BasePigModal v-if="geo.isCountryRussia" />
 
     <template v-else>
-      <BaseHeader class="mb-4 sm:mb-8" />
+      <BaseHeader class="mb-4" />
       <router-view />
     </template>
   </div>
@@ -13,7 +13,11 @@
 import BaseHeader from '@/components/Base/BaseHeader.vue'
 import BasePigModal from '@/components/Base/BasePigModal.vue'
 
+import { useDataBaseStore } from '@/stores/db'
 import { useGeoStore } from '@/stores/geo'
+
+const db = useDataBaseStore()
+db.fetchAll()
 
 const geo = useGeoStore()
 geo.fetch()

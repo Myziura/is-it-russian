@@ -5,6 +5,7 @@
     <ListItem
       v-for="category of props.categories"
       :key="category.id"
+      class="cursor-pointer"
       v-bind="category"
       @click="() => handleSelect(category)"
     />

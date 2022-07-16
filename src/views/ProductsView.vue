@@ -5,15 +5,18 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { useProductsStore } from '@/stores/products'
 import ProductsList from '@/components/Products/ProductsList.vue'
+import { useProductsStore } from '@/stores/products'
 
 const products = useProductsStore()
 const route = useRoute()
 
-const filteredProductsList = products.list.filter(
-  (product) => product.categoryId === route.params.categoryId
+let filteredProductsList = computed(() =>
+  products.list.filter(
+    (product) => product.categoryId === route.params.categoryId
+  )
 )
 </script>
