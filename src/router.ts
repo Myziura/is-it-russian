@@ -1,6 +1,7 @@
 import { createWebHashHistory, createRouter } from 'vue-router'
 
-import CategoriesView from '@/views/CategoriesView.vue'
+import MainView from '@/views/MainView.vue'
+// import CategoriesView from '@/views/CategoriesView.vue'
 import ProductsView from '@/views/ProductsView.vue'
 import ProductView from '@/views/ProductView.vue'
 
@@ -8,13 +9,18 @@ const routes = [
   {
     name: '',
     path: '/',
-    redirect: { name: 'categories' }
+    component: MainView
   },
-  {
-    name: 'categories',
-    path: '/categories',
-    component: CategoriesView
-  },
+  // {
+  //   name: '',
+  //   path: '/',
+  //   redirect: { name: 'categories' }
+  // },
+  // {
+  //   name: 'categories',
+  //   path: '/categories',
+  //   component: CategoriesView
+  // },
   {
     name: 'products',
     path: '/categories/:categoryId/products',

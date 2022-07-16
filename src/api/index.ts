@@ -1,3 +1,4 @@
+import db from '@/api/db.api'
 import geo from '@/api/geo.api'
 // import categories from '@/api/categories.api'
 
@@ -10,6 +11,7 @@ import geo from '@/api/geo.api'
 //   categories: categories(app, BASE_URL)
 // })
 export default () => ({
+  db: db(),
   geo: geo()
   // categories: categories(app, BASE_URL)
 })

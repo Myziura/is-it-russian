@@ -7,12 +7,15 @@
     />
 
     <div class="flex flex-col">
-      <span class="whitespace-pre-line">{{ props.product.text }} </span>
+      <span class="mb-32 whitespace-pre-line">{{ props.product.text }}</span>
+
+      <ProductRecommendations :product="product" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import ProductRecommendations from '@/components/Products/ProductRecommendations.vue'
 import type { Product } from '@/types/products'
 
 const props = defineProps<{

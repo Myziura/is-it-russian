@@ -4,7 +4,7 @@ export type Category = {
   image: string
 }
 
-export enum BaseUrl {
-  Dev = '/dev',
-  Prod = '/prod'
-}
+// export enum BaseUrl {
+//   Dev = '/dev',
+//   Prod = '/prod'
+// }
