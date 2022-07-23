@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 flex flex-col">
+  <div class="container mx-auto flex flex-col">
     <h3 class="mb-4 text-sm text-gray-400 font-bold uppercase">
       Інші продукти
     </h3>

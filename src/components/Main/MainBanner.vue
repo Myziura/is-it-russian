@@ -12,7 +12,11 @@
       </p>
 
       <div class="flex justify-center items-center">
-        <BaseButton label="Повідомити про продукт" type="primary" />
+        <BaseButton
+          label="Повідомити про продукт"
+          type="primary"
+          @@input="handleClick"
+        />
       </div>
     </div>
   </div>
@@ -20,6 +24,9 @@
 
 <script setup lang="ts">
 import BaseButton from '@/components/Base/BaseButton.vue'
+
+const handleClick = () =>
+  window.open('https://forms.gle/8THFVtqFYaNrcT849', '_blank')
 </script>
 
 <style scoped></style>

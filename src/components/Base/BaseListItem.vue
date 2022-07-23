@@ -1,7 +1,7 @@
 <template>
   <li class="w-full flex flex-col">
     <img
-      class="max-h-full max-w-full mb-4"
+      class="max-h-full max-w-full mb-2 sm:mb-4"
       :src="props.image"
       :alt="props.name"
     />
