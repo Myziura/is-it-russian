@@ -2,10 +2,14 @@
   <div class="h-full w-full py-8 flex flex-col sm:py-16 tracking-normal">
     <BasePigModal v-if="geo.isCountryRussia" />
 
-    <template v-else>
+    <div
+      v-else
+      class="mx-auto flex flex-col justify-center"
+      style="max-width: 1024px"
+    >
       <BaseHeader class="mb-4" />
       <router-view />
-    </template>
+    </div>
   </div>
 </template>
 

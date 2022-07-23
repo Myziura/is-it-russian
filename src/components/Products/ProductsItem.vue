@@ -9,7 +9,9 @@
     <div class="flex flex-col">
       <h2 class="mb-4 text-3xl font-semibold">{{ props.product.name }}</h2>
 
-      <span class="mb-32 whitespace-pre-line">{{ props.product.text }}</span>
+      <span class="mb-12 whitespace-pre-line sm:mb-32">
+        {{ props.product.text }}
+      </span>
 
       <ProductRecommendations :product="product" />
     </div>

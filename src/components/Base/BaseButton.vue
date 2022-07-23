@@ -30,11 +30,17 @@ export type { Type }
 </script>
 
 <script setup lang="ts">
-const props = defineProps<{
+interface Props {
   label: string
   type: Type
   icon?: Icon
-}>()
+}
+interface Emits {
+  (e: '@input'): void
+}
+
+const props = defineProps<Props>()
+const emit = defineEmits<Emits>()
 
 const normalized = computed(() => ({
   type: {
@@ -43,7 +49,7 @@ const normalized = computed(() => ({
   }
 }))
 
-const handleClick = () => {}
+const handleClick = () => emit('@input')
 </script>
 
 <style scoped></style>
