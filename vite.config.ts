@@ -4,7 +4,7 @@ import * as path from 'path'
 
 export default () => {
   return defineConfig({
-    base: process.env.NODE_ENV === 'production' ? '/is-it-russian/' : '',
+    // base: process.env.NODE_ENV === 'production' ? '/is-it-russian/' : '',
     plugins: [vue()],
     resolve: {
       alias: {
