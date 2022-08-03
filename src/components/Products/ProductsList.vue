@@ -7,7 +7,8 @@
         v-for="product of limitedProducts"
         :key="product.id"
         class="cursor-pointer"
-        v-bind="product"
+        :image="product.image"
+        :name="product.name"
         @click="() => handleSelect(product)"
       />
     </ul>
