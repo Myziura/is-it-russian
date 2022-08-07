@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto px-4 flex flex-col">
     <h2 class="mb-4 font-bold">
-      Ці продукти створені в рф та фінансують воєнну машину.
+      Ці продукти створені в рф, та фінансують воєнну машину.
     </h2>
 
     <h3 class="mb-4 text-sm text-gray-400 font-bold uppercase">Категорії</h3>
