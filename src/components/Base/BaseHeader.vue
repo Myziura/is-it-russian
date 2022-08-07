@@ -7,7 +7,7 @@
       class="hover:underline leading-8 decoration-2 underline-offset-4"
     >
       <h1 v-if="geo.isCountryUkraine" class="text-3xl">
-        Це🐷<span class="text-red-500">?</span>
+        Це 🐷<span class="text-red-500">?</span>
       </h1>
       <h1 v-else class="text-3xl">
         Is it <span class="text-red-500">russian?</span>

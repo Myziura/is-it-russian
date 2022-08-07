@@ -6,11 +6,8 @@ import ProductsView from '@/views/ProductsView.vue'
 import ProductView from '@/views/ProductView.vue'
 
 const routes = [
-  {
-    name: '',
-    path: '/',
-    component: MainView
-  },
+  { name: '404', path: '/:pathMatch(.*)*', redirect: '/' },
+  { name: '', path: '/', component: MainView },
   // {
   //   name: '',
   //   path: '/',

@@ -2,8 +2,8 @@
   <button
     class="p-4 px-12 flex items-center font-bold text-center"
     :class="{
-      'bg-red-500 text-white': normalized.type.isPrimary,
-      'bg-gray-200': normalized.type.isSecondary
+      'bg-red-500 text-white hover:bg-red-600': normalized.type.isPrimary,
+      'bg-gray-200 hover:bg-gray-300': normalized.type.isSecondary
     }"
     @click="handleClick"
   >
