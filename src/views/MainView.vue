@@ -10,7 +10,7 @@
     <MainBanner class="my-16" />
 
     <h3 class="mb-4 text-sm text-gray-400 font-bold uppercase">Продукти</h3>
-    <ProductsList class="mb-32" :products="products.list" />
+    <ProductsList class="mb-32" :products="products.list" is-sortable />
   </div>
 </template>
 
