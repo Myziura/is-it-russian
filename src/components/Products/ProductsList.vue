@@ -54,7 +54,7 @@ import ListItem from '@/components/Base/BaseListItem.vue'
 
 interface Props {
   products: Product[]
-  isSortable: boolean
+  isSortable?: boolean
 }
 const props = defineProps<Props>()
 
@@ -96,21 +96,3 @@ const handleLoadMore = () => {
   limit.value += offset
 }
 </script>
-
-<style scoped>
-.list-move,
-.list-enter-active,
-.list-leave-active {
-  transition: all 0.5s ease;
-}
-
-.list-enter-from,
-.list-leave-to {
-  opacity: 0;
-  transform: translateX(30px);
-}
-
-.list-leave-active {
-  position: absolute;
-}
-</style>

@@ -42,4 +42,10 @@
 import { useGeoStore } from '@/stores/geo'
 
 const geo = useGeoStore()
+
+// const notifs = {
+//   date: '',
+//   title: '',
+//   text: ''
+// }
 </script>
