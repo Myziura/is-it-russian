@@ -1,5 +1,7 @@
 <template>
-  <div class="w-full py-8 flex flex-col tracking-normal sm:py-16">
+  <div
+    class="h-full w-full py-8 flex flex-col tracking-normal overflow-auto sm:py-16"
+  >
     <BasePigModal v-if="geo.isCountryRussia" />
 
     <div

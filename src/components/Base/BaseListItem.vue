@@ -1,11 +1,11 @@
 <template>
   <button class="group w-full flex flex-col">
     <img
-      class="max-h-full mb-2 sm:mb-4"
+      class="mb-2 sm:mb-4"
       :src="props.image"
       :alt="props.name"
       @load="handleLoaded"
-      :style="`max-height: ${imageMaxHeight}px`"
+      :style="`max-height: ${imageMaxHeight}px; max-width: ${imageMaxWidth}px`"
     />
     <span class="font-bold group-hover:underline">{{ props.name }}</span>
   </button>
@@ -20,9 +20,12 @@ const props = defineProps<{
 }>()
 
 const imageMaxHeight = ref<number | string>('auto')
+const imageMaxWidth = ref<number | string>('auto')
 
 const handleLoaded = (event: Event) => {
   const target = event.target as HTMLImageElement
+
   imageMaxHeight.value = target.clientHeight
+  imageMaxWidth.value = target.clientWidth
 }
 </script>

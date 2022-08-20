@@ -17,7 +17,7 @@
     <TransitionGroup
       name="list"
       tag="div"
-      class="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 sm:gap-8"
+      class="relative h-auto grid gap-4 grid-cols-2 overflow-hidden sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 sm:gap-8"
     >
       <ListItem
         v-for="product of limitedProducts"
