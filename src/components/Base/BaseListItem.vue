@@ -1,5 +1,5 @@
 <template>
-  <button class="group w-full flex flex-col">
+  <button class="group w-full flex flex-col text-left">
     <img
       class="mb-2 sm:mb-4"
       :src="props.image"

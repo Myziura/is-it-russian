@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@types/lodash": "^4.14.182",
+    "@vueuse/components": "^9.1.0",
+    "@vueuse/core": "^9.1.0",
+    "dayjs": "^1.11.5",
     "lodash": "^4.17.21",
     "path": "^0.12.7",
     "pinia": "^2.0.14",

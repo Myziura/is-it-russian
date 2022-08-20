@@ -1,0 +1,9 @@
+html {
+  @apply overflow-hidden;
+}
+
+html,
+body,
+#app {
+  @apply h-full w-full;
+}

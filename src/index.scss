@@ -1,62 +1,7 @@
-@font-face {
-  font-family: 'Montserrat';
-  src: url('@/assets/fonts/Montserrat/Montserrat-Regular.ttf')
-    format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: 'Montserrat';
-  src: url('@/assets/fonts/Montserrat/Montserrat-SemiBold.ttf')
-    format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: block;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html {
-  @apply overflow-hidden;
-}
-
-html,
-body,
-#app {
-  @apply h-full w-full;
-}
-
-.slide-leave-active,
-.slide-enter-active {
-  transition: 1s;
-}
-.slide-enter {
-  transform: translate(100%, 0);
-}
-.slide-leave-to {
-  transform: translate(-100%, 0);
-}
-
-.list-move,
-.list-enter-active,
-.list-leave-active {
-  transition: all 1s ease;
-}
-
-.list-enter-from,
-.list-leave-to {
-  opacity: 0;
-  transform: translateX(30px);
-}
-
-.list-leave-active {
-  position: absolute;
-
-  top: 100%;
-  left: 100%;
-
-  transform: translate3d(0, 0, 0);
-}
+@import '@/assets/styles/base.scss';
+@import '@/assets/styles/fonts.scss';
+@import '@/assets/styles/transtions.scss';

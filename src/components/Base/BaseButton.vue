@@ -1,6 +1,6 @@
 <template>
   <button
-    class="p-4 px-12 flex items-center font-bold text-center"
+    class="p-4 px-12 flex items-center font-bold text-center duration-100"
     :class="{
       'bg-red-500 text-white hover:bg-red-600': normalized.type.isPrimary,
       'bg-gray-200 hover:bg-gray-300': normalized.type.isSecondary
