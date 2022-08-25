@@ -20,7 +20,6 @@
         class="mr-4"
         @click="handleOpenNotificationsSidebar"
       >
-        {{ handleOpenNotificationsSidebar() }}
         <button>
           <img class="h-10 w-10" src="@/assets/icons/notifs.svg" />
         </button>
@@ -53,7 +52,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue'
+import { watch, reactive } from 'vue'
 import { useGeoStore } from '@/stores/geo'
 import { useNotificationsStore } from '@/stores/notifications'
 
@@ -74,4 +73,13 @@ const handleOpenNotificationsSidebar = () => {
 const handleCloseNotificationsSidebar = () => {
   isVisible.notificationsSidebar = false
 }
+
+watch(
+  () => notifications.isSome,
+  () => {
+    const theNewestNotif = notifications.list.sort(
+      (a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
+    )[0]
+  }
+)
 </script>

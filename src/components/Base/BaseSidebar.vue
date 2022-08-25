@@ -10,7 +10,7 @@
           <div
             v-if="isVisibleContent"
             class="relative w-11/12 h-full flex flex-col bg-white shadow-lg cursor-default overflow-hidden"
-            :style="`max-width: 480px;`"
+            :style="`max-width: 552px;`"
           >
             <div
               class="h-full w-full flex flex-col overflow-auto"
