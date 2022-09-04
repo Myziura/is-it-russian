@@ -43,7 +43,9 @@ export const useDataBaseStore = defineStore({
           products.list = db.products
           notifications.list = db.notifications || []
         }
-      } catch {}
+      } catch {
+        console.error()
+      }
 
       this.isLoading = false
     }

@@ -62,11 +62,11 @@ const route = useRoute()
 const categories = useCategoriesStore()
 const products = useProductsStore()
 
-let category = ref<Category | null>(null)
-let product = ref<Product | null>(null)
+const category = ref<Category | null>(null)
+const product = ref<Product | null>(null)
 
-let isProductsListPage = ref<boolean>(false)
-let isProductItemPage = ref<boolean>(false)
+const isProductsListPage = ref<boolean>(false)
+const isProductItemPage = ref<boolean>(false)
 
 watch(
   () => route.name,

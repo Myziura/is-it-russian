@@ -17,6 +17,6 @@ const products = useProductsStore()
 const productId = computed(() => route.params.productId as string)
 
 const product = computed(() =>
-  productId ? products.getProductById(productId.value) : null
+  productId.value ? products.getProductById(productId.value) : null
 )
 </script>

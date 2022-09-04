@@ -14,7 +14,9 @@ export default () => {
         const db = (await response.json()) as DataBase
 
         result = { isSuccess: true, db }
-      } catch {}
+      } catch {
+        console.error()
+      }
 
       return { ...result, db: result.db as DataBase }
     }

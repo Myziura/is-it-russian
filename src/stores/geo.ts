@@ -30,7 +30,9 @@ export const useGeoStore = defineStore({
       try {
         const { isSuccess, geo } = await api.geo.fetch()
         this.country = isSuccess ? geo.country : ''
-      } catch {}
+      } catch {
+        console.error()
+      }
     }
   }
 })

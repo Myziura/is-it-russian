@@ -27,7 +27,7 @@ const normalizeText = () => {
 
   const regExp = new RegExp(/\((.*?)\)\[(.*?)\]/, 'gm')
 
-  let match = text.match(regExp)
+  const match = text.match(regExp)
 
   if (!match) return text
 

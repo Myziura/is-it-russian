@@ -76,7 +76,7 @@ const offset = 10
 const limit = ref(offset)
 const limitedProducts = computed(() => {
   const sorted = props.isSortable
-    ? props.products.sort((a, b) => b[sortKey.value] - a[sortKey.value])
+    ? [...props.products].sort((a, b) => b[sortKey.value] - a[sortKey.value])
     : props.products
 
   const limited = sorted.slice(0, limit.value)

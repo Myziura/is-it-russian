@@ -14,7 +14,7 @@ export const useProductsStore = defineStore({
   getters: {
     getProductById:
       (state) =>
-      (id: string): Product =>
-        state.list.find((product) => product.id === id)!
+      (id: string): Product | null =>
+        state.list.find((product) => product.id === id) || null
   }
 })

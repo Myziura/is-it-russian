@@ -52,7 +52,7 @@
 </template>
 
 <script setup lang="ts">
-import { watch, reactive } from 'vue'
+import { reactive } from 'vue'
 import { useGeoStore } from '@/stores/geo'
 import { useNotificationsStore } from '@/stores/notifications'
 
@@ -74,12 +74,12 @@ const handleCloseNotificationsSidebar = () => {
   isVisible.notificationsSidebar = false
 }
 
-watch(
-  () => notifications.isSome,
-  () => {
-    const theNewestNotif = notifications.list.sort(
-      (a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
-    )[0]
-  }
-)
+// watch(
+//   () => notifications.isSome,
+//   () => {
+//     const theNewestNotif = notifications.list.sort(
+//       (a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
+//     )[0]
+//   }
+// )
 </script>

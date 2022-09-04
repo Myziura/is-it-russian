@@ -13,5 +13,6 @@ export const useNotificationsStore = defineStore({
 
   getters: {
     isSome: (state) => state.list.length > 0
+    // isSomeUnread: (state) => state.list.length > 0
   }
 })

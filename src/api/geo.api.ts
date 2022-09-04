@@ -12,7 +12,9 @@ export default () => {
         const geo = (await response.json()) as Geo
 
         result = { isSuccess: true, geo }
-      } catch {}
+      } catch {
+        console.error()
+      }
 
       return { ...result, geo: result.geo as Geo }
     }

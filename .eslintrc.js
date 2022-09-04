@@ -1,28 +1,26 @@
 module.exports = {
-  env: {
-    node: true
+  root: true,
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: '@typescript-eslint/parser'
   },
   extends: [
+    'plugin:vue/strongly-recommended',
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:vue/vue3-recommended',
+    '@vue/typescript/recommended',
     'prettier'
   ],
+  plugins: ['@typescript-eslint', 'prettier'],
   rules: {
     'prettier/prettier': 'error',
-    'no-unused-vars': [
+    'no-undef': 'off',
+    '@typescript-eslint/no-unused-vars': [
       'error',
       {
         vars: 'all',
         args: 'after-used',
         ignoreRestSiblings: true,
         caughtErrors: 'all'
-      }
-    ],
-    'vue/component-tags-order': [
-      'error',
-      {
-        order: [['template', 'script'], 'style']
       }
     ]
   }

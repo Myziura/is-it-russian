@@ -23,7 +23,7 @@ const route = useRoute()
 const categoryId = computed(() => route.params.categoryId as string)
 
 const category = computed(() =>
-  categoryId ? categories.getCategoryById(categoryId.value) : null
+  categoryId.value ? categories.getCategoryById(categoryId.value) : null
 )
 
 const filteredProductsList = computed(() =>
