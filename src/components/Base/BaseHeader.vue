@@ -18,6 +18,7 @@
       <BaseBadge
         v-if="notifications.isSome"
         class="mr-4"
+        :is-disabled="!notifications.isSomeNewNotifs"
         @click="handleOpenNotificationsSidebar"
       >
         <button>
@@ -73,13 +74,4 @@ const handleOpenNotificationsSidebar = () => {
 const handleCloseNotificationsSidebar = () => {
   isVisible.notificationsSidebar = false
 }
-
-// watch(
-//   () => notifications.isSome,
-//   () => {
-//     const theNewestNotif = notifications.list.sort(
-//       (a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
-//     )[0]
-//   }
-// )
 </script>

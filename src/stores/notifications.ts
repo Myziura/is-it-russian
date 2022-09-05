@@ -12,7 +12,25 @@ export const useNotificationsStore = defineStore({
   }),
 
   getters: {
-    isSome: (state) => state.list.length > 0
-    // isSomeUnread: (state) => state.list.length > 0
+    newestNotif: (state): Notification | undefined =>
+      [...state.list].sort((a, b) => b.date - a.date)[0],
+    newestNotifDate(): number {
+      return this.newestNotif?.date || 0
+    },
+
+    isSome: (state): boolean => state.list.length > 0,
+    isSomeNewNotifs(): boolean {
+      console.log(localStorage.getItem('newestNotifDate'))
+
+      return (
+        this.newestNotifDate > (localStorage.getItem('newestNotifDate') || 0)
+      )
+    }
   }
+
+  // actions: {
+  //   updateLocalStorageWithNewestNotif() {
+  //     localStorage.setItem('newestNotifDate', this.newestNotifDate.toString())
+  //   }
+  // }
 })

@@ -1,9 +1,9 @@
-const icons = import.meta.globEager('@/assets/icons/*.png')
+const icons = import.meta.glob('@/assets/icons/*')
 
 const defineIconSrc = (icon: string) => {
-  const iconKeys = Object.keys(icons).find((key) => key.includes(icon))
+  const iconPath = Object.keys(icons).find((key) => key.includes(icon))
 
-  return iconKeys ? icons[iconKeys].default : ''
+  return iconPath || ''
 }
 
 export const useAssets = () => ({ defineIconSrc })
