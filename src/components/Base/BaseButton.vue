@@ -29,6 +29,11 @@ export { TYPE }
 export type { Type }
 </script>
 
+<!-- import {
+  default as BaseUserPicker,
+  TYPES as USER_PICKER_TYPES
+} from '@/components/Base/BaseUserPicker/BaseUserPicker' -->
+
 <script setup lang="ts">
 interface Props {
   label: string
